@@ -53,7 +53,7 @@ if st.button("이미지 생성"):
 
             # generated_images 폴더가 없으면 생성
             if not os.path.exists("generated_images"):
-            os.makedirs("generated_images")
+                os.makedirs("generated_images")
 
             # 템플릿 이미지를 저장할 경로에 저장
             template_image.save(output_image_path)
