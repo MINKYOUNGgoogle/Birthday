@@ -75,10 +75,26 @@ if st.button("이미지 생성"):
 
 import streamlit as st
 
-# CSS 코드로 상단 메뉴 숨기기
+# CSS로 상단 메뉴 숨기기
 st.markdown("""
     <style>
+        /* 상단 메뉴 숨기기 */
         .css-1q8dd3v {
+            visibility: hidden;
+        }
+        
+        /* 설정 창 숨기기 */
+        .css-1d391kg {
+            visibility: hidden;
+        }
+        
+        /* Fork 버튼 숨기기 */
+        .css-1g1u49i {
+            visibility: hidden;
+        }
+        
+        /* 상단 바 숨기기 */
+        .css-1v3fvcr {
             visibility: hidden;
         }
     </style>
