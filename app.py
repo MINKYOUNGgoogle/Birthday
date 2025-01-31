@@ -48,10 +48,16 @@ if st.button("이미지 생성"):
             # 텍스트 삽입
             draw.text(text_position, name, font=font, fill=text_color)
 
-                        # 이미지 저장
-            output_image_path = os.path.join(base_path, f"birthday_{name}.png")
-            template_image.save(output_image_path)
+            # 파일 저장 경로를 로컬 프로젝트 디렉토리로 변경
+            output_image_path = os.path.join("generated_images", f"birthday_{name}.png")
 
+            # generated_images 폴더가 없으면 생성
+            if not os.path.exists("generated_images"):
+            os.makedirs("generated_images")
+
+            # 템플릿 이미지를 저장할 경로에 저장
+            template_image.save(output_image_path)
+            
             # 생성된 이미지 표시 (use_container_width=True 적용)
             st.image(output_image_path, caption=f"{name}님의 생일 축하 이미지", use_container_width=True)
 
