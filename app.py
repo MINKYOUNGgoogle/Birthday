@@ -6,7 +6,7 @@ import os
 st.title("🎉 생일 축하 이미지 생성기")
 
 # .PY 폴더 경로 설정 (절대 경로)
-base_path = r"C:\Users\rkdal\.PY"
+base_path = r"https://github.com/MINKYOUNGgoogle/Birthday/blob/main/app.py"
 template_path = os.path.join(base_path, "image.png")  # 템플릿 이미지 파일 경로
 font_path = os.path.join(base_path, "font.ttf")      # 폰트 파일 경로
 
