@@ -27,10 +27,10 @@ if not os.path.exists(font_path):
     st.error(f"폰트 파일을 찾을 수 없습니다: {font_path}")
 
 # 이름 입력 받기
-name = st.text_input("이름을 입력하세요", placeholder="예: 홍길동")
+name = st.text_input("이름을 입력하세요.", placeholder="예: 홍길동")
 
 # 이미지 생성 버튼
-if st.button("이미지 생성"):
+if st.button("이미지 생"):
     if name.strip() == "":
         st.error("이름을 입력해주세요!")
     else:
