@@ -72,14 +72,4 @@ if st.button("이미지 생성"):
         except Exception as e:
             st.error(f"이미지 생성 중 오류가 발생했습니다: {str(e)}")
 
-import streamlit as st
 
-# 텍스트 입력과 버튼에 고유한 key 값 추가
-name = st.text_input("이름을 입력하세요", placeholder="예: 홍길동", key="name_input")
-
-# 버튼에 고유한 key 값 추가
-if st.button("이미지 생성", key="generate_button"):
-    if name.strip() == "":
-        st.error("이름을 입력해주세요!")
-    else:
-        st.write(f"{name}님의 생일 축하 이미지를 생성합니다!")
