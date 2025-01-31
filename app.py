@@ -1,4 +1,33 @@
 import streamlit as st
+
+# CSS로 상단 메뉴 숨기기
+st.markdown("""
+    <style>
+        /* 상단 메뉴 숨기기 */
+        .css-1q8dd3v {
+            visibility: hidden;
+        }
+        
+        /* 설정 창 숨기기 */
+        .css-1d391kg {
+            visibility: hidden;
+        }
+        
+        /* Fork 버튼 숨기기 */
+        .css-1g1u49i {
+            visibility: hidden;
+        }
+        
+        /* 상단 바 숨기기 */
+        .css-1v3fvcr {
+            visibility: hidden;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
+
+
+import streamlit as st
 from PIL import Image, ImageDraw, ImageFont
 import os
 
@@ -71,32 +100,3 @@ if st.button("이미지 생성"):
                 )
         except Exception as e:
             st.error(f"이미지 생성 중 오류가 발생했습니다: {str(e)}")
-
-
-import streamlit as st
-
-# CSS로 상단 메뉴 숨기기
-st.markdown("""
-    <style>
-        /* 상단 메뉴 숨기기 */
-        .css-1q8dd3v {
-            visibility: hidden;
-        }
-        
-        /* 설정 창 숨기기 */
-        .css-1d391kg {
-            visibility: hidden;
-        }
-        
-        /* Fork 버튼 숨기기 */
-        .css-1g1u49i {
-            visibility: hidden;
-        }
-        
-        /* 상단 바 숨기기 */
-        .css-1v3fvcr {
-            visibility: hidden;
-        }
-    </style>
-""", unsafe_allow_html=True)
-
