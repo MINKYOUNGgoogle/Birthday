@@ -30,7 +30,7 @@ if not os.path.exists(font_path):
 name = st.text_input("이름을 입력하세요.", placeholder="예: 홍길동")
 
 # 이미지 생성 버튼
-if st.button("이미지 생"):
+if st.button("이미지 생성"):
     if name.strip() == "":
         st.error("이름을 입력해주세요!")
     else:
