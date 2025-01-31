@@ -73,3 +73,17 @@ if st.button("이미지 생성"):
             st.error(f"이미지 생성 중 오류가 발생했습니다: {str(e)}")
 
 
+import streamlit as st
+
+# CSS 코드로 상단 메뉴 숨기기
+st.markdown("""
+    <style>
+        .css-1q8dd3v {
+            visibility: hidden;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
+# 앱 본문
+st.title("🎉 생일 축하 이미지 생성기")
+st.write("여기에 앱 기능이 들어갑니다!")
