@@ -84,6 +84,3 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# 앱 본문
-st.title("🎉 생일 축하 이미지 생성기")
-st.write("여기에 앱 기능이 들어갑니다!")
