@@ -2,23 +2,10 @@ import streamlit as st
 
 st.markdown("""
     <style>
-        /* 상단 메뉴와 버튼 숨기기 */
-        .css-1v3fvcr {
-            visibility: hidden !important;
-        }
-        .css-1q8dd3v {
-            visibility: hidden !important;
-        }
-        .css-1d391kg {
-            visibility: hidden !important;
-        }
-        .css-1g1u49i {
-            visibility: hidden !important;
-        }
+        /* Streamlit 전체 상단 메뉴 숨기기 */
+        header {visibility: hidden;}
     </style>
 """, unsafe_allow_html=True)
-
-
 
 
 import streamlit as st
