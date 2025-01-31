@@ -13,7 +13,7 @@ from PIL import Image, ImageDraw, ImageFont
 import os
 
 # Streamlit 앱 제목
-st.title("🎉 생일 축하 이미지 생성기")
+st.title("🎉 생일 축하 이미지 생성기 🍰")
 
 # .PY 폴더 경로 설정 (절대 경로)
 base_path = r"C:\Users\rkdal\.PY"
