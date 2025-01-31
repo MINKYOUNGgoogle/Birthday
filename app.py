@@ -74,19 +74,12 @@ if st.button("이미지 생성"):
 
 import streamlit as st
 
-# 비밀번호를 설정하여 앱 소유자만 세팅 창을 보도록 하기
-password = "your_secure_password"
+# 텍스트 입력과 버튼에 고유한 key 값 추가
+name = st.text_input("이름을 입력하세요", placeholder="예: 홍길동", key="name_input")
 
-# 비밀번호 입력
-user_password = st.text_input("앱 설정을 위해 비밀번호를 입력하세요:", type="password")
-
-if user_password == password:
-    # 세팅 창과 관리 기능을 보여줍니다.
-    st.sidebar.header("앱 설정")
-    st.sidebar.write("여기서 세팅을 할 수 있습니다.")
-    # 추가적인 세팅 관련 코드 작성
-else:
-    # 비밀번호가 틀리거나 입력되지 않으면 일반 사용자 인터페이스
-    st.title("🎉 생일 축하 이미지 생성기")
-    st.text_input("이름을 입력하세요", placeholder="예: 홍길동")
-    st.button("이미지 생성")
+# 버튼에 고유한 key 값 추가
+if st.button("이미지 생성", key="generate_button"):
+    if name.strip() == "":
+        st.error("이름을 입력해주세요!")
+    else:
+        st.write(f"{name}님의 생일 축하 이미지를 생성합니다!")
